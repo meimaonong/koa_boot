@@ -1,0 +1,22 @@
+{
+  "name": "koa_boot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meimaonong/koa_boot.git"
+  },
+  "author": "qcc",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/meimaonong/koa_boot/issues"
+  },
+  "homepage": "https://github.com/meimaonong/koa_boot#readme",
+  "dependencies": {
+    "koa": "^2.5.0"
+  }
+}
