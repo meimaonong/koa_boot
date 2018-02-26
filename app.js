@@ -10,7 +10,11 @@ const json = require('koa-json')
 // 引入 koa-static
 const staticFiles = require('koa-static')
 
+const middleware = require('./middleware')
+
 const app = new Koa()
+
+middleware(app)
 
 // 指定 public目录为静态资源目录，用来存放 js css images 等
 app.use(staticFiles(path.resolve(__dirname, "./public")))
@@ -27,6 +31,7 @@ app.use(bodyParser())
 app.use(json())
 
 router.get('/', async (ctx, next) => {
+    ctx.log.debug('debug index')
     ctx.body = 'Index'
 })
 
