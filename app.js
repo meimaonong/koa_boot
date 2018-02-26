@@ -10,6 +10,10 @@ router.get('/', async (ctx, next) => {
     ctx.body = 'Index'
 })
 
+router.post('/home', async (ctx, next) => {
+    //ctx.request.body
+})
+
 router.get('/home', async (ctx, next) => {
     ctx.body = 'Home'
 })
@@ -18,5 +22,5 @@ router.get('/home', async (ctx, next) => {
 app.use(router.routes())
 
 app.listen(2333, () => {
-    console.log('server is running at http://localhost:3000')
+    console.log('server is running at http://localhost:2333')
 })
