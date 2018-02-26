@@ -5,6 +5,8 @@ const nunjucks = require('koa-nunjucks-2')
 
 const path = require('path')
 
+const json = require('koa-json')
+
 // 引入 koa-static
 const staticFiles = require('koa-static')
 
@@ -22,7 +24,7 @@ app.use(nunjucks({
 }))
 
 app.use(bodyParser())
-
+app.use(json())
 
 router.get('/', async (ctx, next) => {
     ctx.body = 'Index'
