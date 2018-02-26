@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/meimaonong/koa_boot#readme",
   "dependencies": {
-    "koa": "^2.5.0"
+    "koa": "^2.5.0",
+    "koa-router": "^7.4.0"
   }
 }
