@@ -1,7 +1,10 @@
 const Koa = require('koa')
 const router = require('koa-router')()
+const bodyParser = require('koa-bodyparser')
 
 const app = new Koa()
+
+app.use(bodyParser())
 
 router.get('/', async (ctx, next) => {
     ctx.body = 'Index'
